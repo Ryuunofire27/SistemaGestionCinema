@@ -16,6 +16,7 @@ class App extends React.Component{
     return (
       <Context.Provider value={{state: this.state, fn: this.fn}}>
         <Header/>
+        <Content/>
       </Context.Provider>
     );
   }
