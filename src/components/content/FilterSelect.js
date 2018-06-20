@@ -20,10 +20,10 @@ class FilterSelect extends React.PureComponent{
     return (
       <div className="search-selects">
         <div className="search-selects-container">
-          <Select tipo="Por dia" name="mes" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
-          <Select tipo="Por dia" name="anio" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
-          <Select tipo="Por dia" name="milenio" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
-          <Select tipo="Por dia" name="dia" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
+          <Select tipo="Por pelicula" name="pelicula" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
+          <Select tipo="Por ciudad" name="ciudad" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
+          <Select tipo="Por cine" name="cine" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
+          <Select tipo="Por fecha" name="fecha" options={[{value: 0, text: 'Elige un dia'},{value: 1, text: 'Lunes'}]} onChange={this.handleChange}/>
         </div>
         <div className="search-selects-search">
           <button className={this.state.active ? "filter-button-active" : "filter-button-inactive"}>Filtrar</button>

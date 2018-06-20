@@ -1,7 +1,8 @@
 import React from 'react';
-import { Context } from './AppContext';
+import { AppContext } from './AppContext';
 import { Header } from './header/Header';
 import { Content } from './content/Content';
+import { Footer } from './footer/Footer';
 class App extends React.Component{
   
   state = {
@@ -14,10 +15,11 @@ class App extends React.Component{
   
   render(){
     return (
-      <Context.Provider value={{state: this.state, fn: this.fn}}>
+      <AppContext.Provider value={{state: this.state, fn: this.fn}}>
         <Header/>
         <Content/>
-      </Context.Provider>
+        <Footer/>
+      </AppContext.Provider>
     );
   }
 }

@@ -13,7 +13,7 @@ export const Promociones = (props) => {
         </div>
         <div className="promocion-footer">
           <button className="btn-comprar">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
+          <i className="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
           </button>
         </div>
       </div>
@@ -27,7 +27,7 @@ export const Promociones = (props) => {
         </div>
         <div className="promocion-footer">
           <button className="btn-comprar">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
+          <i className="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
           </button>
         </div>
       </div>
@@ -41,7 +41,7 @@ export const Promociones = (props) => {
         </div>
         <div className="promocion-footer">
           <button className="btn-comprar">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
+          <i className="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Comprar
           </button>
         </div>
       </div>
