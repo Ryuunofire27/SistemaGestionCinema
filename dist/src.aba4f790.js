@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({50:[function(require,module,exports) {
+})({57:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -189,7 +189,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],51:[function(require,module,exports) {
+},{}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -243,7 +243,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],52:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -261,7 +261,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],54:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -298,7 +298,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],53:[function(require,module,exports) {
+},{}],63:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -361,7 +361,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":54}],69:[function(require,module,exports) {
+},{"./emptyFunction":58}],79:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -375,7 +375,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],45:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -435,7 +435,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":51,"fbjs/lib/warning":53,"./lib/ReactPropTypesSecret":69}],24:[function(require,module,exports) {
+},{"fbjs/lib/invariant":62,"fbjs/lib/warning":63,"./lib/ReactPropTypesSecret":79}],29:[function(require,module,exports) {
 /** @license React v16.4.0
  * react.development.js
  *
@@ -1904,7 +1904,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":50,"fbjs/lib/invariant":51,"fbjs/lib/emptyObject":52,"fbjs/lib/warning":53,"fbjs/lib/emptyFunction":54,"prop-types/checkPropTypes":45}],5:[function(require,module,exports) {
+},{"object-assign":57,"fbjs/lib/invariant":62,"fbjs/lib/emptyObject":64,"fbjs/lib/warning":63,"fbjs/lib/emptyFunction":58,"prop-types/checkPropTypes":60}],5:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1912,7 +1912,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":24}],25:[function(require,module,exports) {
+},{"./cjs/react.development.js":29}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1927,9 +1927,9 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppContext = exports.AppContext = _react2.default.createContext();
-},{"react":5}],44:[function(require,module,exports) {
+},{"react":5}],33:[function(require,module,exports) {
 module.exports="/logo-128.3d7b6291.png";
-},{}],30:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -1990,7 +1990,7 @@ if (__DEV__) {
 }
 
 module.exports = warning;
-},{}],66:[function(require,module,exports) {
+},{}],73:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2507,7 +2507,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-},{"fbjs/lib/emptyFunction":54,"fbjs/lib/invariant":51,"fbjs/lib/warning":53,"object-assign":50,"./lib/ReactPropTypesSecret":69,"./checkPropTypes":45}],32:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":58,"fbjs/lib/invariant":62,"fbjs/lib/warning":63,"object-assign":57,"./lib/ReactPropTypesSecret":79,"./checkPropTypes":60}],45:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2531,7 +2531,7 @@ if ('development' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithTypeCheckers":66}],83:[function(require,module,exports) {
+},{"./factoryWithTypeCheckers":73}],111:[function(require,module,exports) {
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -2585,7 +2585,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{}],33:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2632,7 +2632,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
-},{}],84:[function(require,module,exports) {
+},{}],109:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2708,7 +2708,7 @@ function resolvePathname(to) {
 }
 
 exports.default = resolvePathname;
-},{}],85:[function(require,module,exports) {
+},{}],110:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2756,7 +2756,7 @@ function valueEqual(a, b) {
 }
 
 exports.default = valueEqual;
-},{}],59:[function(require,module,exports) {
+},{}],77:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2819,7 +2819,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],58:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2908,7 +2908,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":84,"value-equal":85,"./PathUtils":59}],72:[function(require,module,exports) {
+},{"resolve-pathname":109,"value-equal":110,"./PathUtils":77}],103:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2996,7 +2996,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":83}],73:[function(require,module,exports) {
+},{"warning":111}],104:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3054,7 +3054,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],55:[function(require,module,exports) {
+},{}],74:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3373,7 +3373,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":83,"invariant":33,"./LocationUtils":58,"./PathUtils":59,"./createTransitionManager":72,"./DOMUtils":73}],56:[function(require,module,exports) {
+},{"warning":111,"invariant":43,"./LocationUtils":76,"./PathUtils":77,"./createTransitionManager":103,"./DOMUtils":104}],75:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3707,7 +3707,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":83,"invariant":33,"./LocationUtils":58,"./PathUtils":59,"./createTransitionManager":72,"./DOMUtils":73}],57:[function(require,module,exports) {
+},{"warning":111,"invariant":43,"./LocationUtils":76,"./PathUtils":77,"./createTransitionManager":103,"./DOMUtils":104}],78:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3891,7 +3891,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":83,"./PathUtils":59,"./LocationUtils":58,"./createTransitionManager":72}],31:[function(require,module,exports) {
+},{"warning":111,"./PathUtils":77,"./LocationUtils":76,"./createTransitionManager":103}],46:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3946,7 +3946,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.createBrowserHistory = _createBrowserHistory3.default;
 exports.createHashHistory = _createHashHistory3.default;
 exports.createMemoryHistory = _createMemoryHistory3.default;
-},{"./createBrowserHistory":55,"./createHashHistory":56,"./createMemoryHistory":57,"./LocationUtils":58,"./PathUtils":59}],37:[function(require,module,exports) {
+},{"./createBrowserHistory":74,"./createHashHistory":75,"./createMemoryHistory":78,"./LocationUtils":76,"./PathUtils":77}],51:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4089,7 +4089,7 @@ Router.childContextTypes = {
 };
 
 exports.default = Router;
-},{"warning":30,"invariant":33,"react":5,"prop-types":32}],16:[function(require,module,exports) {
+},{"warning":44,"invariant":43,"react":5,"prop-types":45}],17:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4103,7 +4103,7 @@ var _Router2 = _interopRequireDefault(_Router);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Router":37}],8:[function(require,module,exports) {
+},{"react-router/es/Router":51}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4187,7 +4187,7 @@ BrowserRouter.propTypes = {
 };
 
 exports.default = BrowserRouter;
-},{"warning":30,"react":5,"prop-types":32,"history":31,"./Router":16}],9:[function(require,module,exports) {
+},{"warning":44,"react":5,"prop-types":45,"history":46,"./Router":17}],10:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4270,7 +4270,7 @@ HashRouter.propTypes = {
 };
 
 exports.default = HashRouter;
-},{"warning":30,"react":5,"prop-types":32,"history":31,"./Router":16}],10:[function(require,module,exports) {
+},{"warning":44,"react":5,"prop-types":45,"history":46,"./Router":17}],11:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4414,7 +4414,7 @@ Link.contextTypes = {
 };
 
 exports.default = Link;
-},{"react":5,"prop-types":32,"invariant":33,"history":31}],40:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"invariant":43,"history":46}],47:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4498,7 +4498,7 @@ MemoryRouter.propTypes = {
 };
 
 exports.default = MemoryRouter;
-},{"warning":30,"react":5,"prop-types":32,"history":31,"./Router":37}],11:[function(require,module,exports) {
+},{"warning":44,"react":5,"prop-types":45,"history":46,"./Router":51}],12:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4512,12 +4512,12 @@ var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/MemoryRouter":40}],86:[function(require,module,exports) {
+},{"react-router/es/MemoryRouter":47}],115:[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],67:[function(require,module,exports) {
+},{}],101:[function(require,module,exports) {
 var isarray = require('isarray')
 
 /**
@@ -4945,7 +4945,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":86}],39:[function(require,module,exports) {
+},{"isarray":115}],53:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5027,7 +5027,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":67}],36:[function(require,module,exports) {
+},{"path-to-regexp":101}],50:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5208,7 +5208,7 @@ Route.childContextTypes = {
 };
 
 exports.default = Route;
-},{"warning":30,"invariant":33,"react":5,"prop-types":32,"./matchPath":39}],15:[function(require,module,exports) {
+},{"warning":44,"invariant":43,"react":5,"prop-types":45,"./matchPath":53}],16:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5222,7 +5222,7 @@ var _Route2 = _interopRequireDefault(_Route);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Route":36}],12:[function(require,module,exports) {
+},{"react-router/es/Route":50}],13:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5332,7 +5332,7 @@ NavLink.defaultProps = {
 };
 
 exports.default = NavLink;
-},{"react":5,"prop-types":32,"./Route":15,"./Link":10}],34:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"./Route":16,"./Link":11}],49:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5439,7 +5439,7 @@ Prompt.contextTypes = {
 };
 
 exports.default = Prompt;
-},{"react":5,"prop-types":32,"invariant":33}],13:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"invariant":43}],14:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5453,7 +5453,7 @@ var _Prompt2 = _interopRequireDefault(_Prompt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Prompt":34}],43:[function(require,module,exports) {
+},{"react-router/es/Prompt":49}],52:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5501,7 +5501,7 @@ var generatePath = function generatePath() {
 };
 
 exports.default = generatePath;
-},{"path-to-regexp":67}],35:[function(require,module,exports) {
+},{"path-to-regexp":101}],55:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5657,7 +5657,7 @@ Redirect.contextTypes = {
 };
 
 exports.default = Redirect;
-},{"react":5,"prop-types":32,"warning":30,"invariant":33,"history":31,"./generatePath":43}],14:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"warning":44,"invariant":43,"history":46,"./generatePath":52}],15:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5671,7 +5671,7 @@ var _Redirect2 = _interopRequireDefault(_Redirect);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Redirect":35}],38:[function(require,module,exports) {
+},{"react-router/es/Redirect":55}],48:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5868,7 +5868,7 @@ StaticRouter.childContextTypes = {
 };
 
 exports.default = StaticRouter;
-},{"warning":30,"invariant":33,"react":5,"prop-types":32,"history":31,"./Router":37}],17:[function(require,module,exports) {
+},{"warning":44,"invariant":43,"react":5,"prop-types":45,"history":46,"./Router":51}],18:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5882,7 +5882,7 @@ var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/StaticRouter":38}],41:[function(require,module,exports) {
+},{"react-router/es/StaticRouter":48}],56:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5993,7 +5993,7 @@ Switch.propTypes = {
 };
 
 exports.default = Switch;
-},{"react":5,"prop-types":32,"warning":30,"invariant":33,"./matchPath":39}],18:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"warning":44,"invariant":43,"./matchPath":53}],19:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6007,7 +6007,7 @@ var _Switch2 = _interopRequireDefault(_Switch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Switch":41}],19:[function(require,module,exports) {
+},{"react-router/es/Switch":56}],20:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6021,7 +6021,7 @@ var _generatePath2 = _interopRequireDefault(_generatePath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _generatePath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/generatePath":43}],20:[function(require,module,exports) {
+},{"react-router/es/generatePath":52}],21:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6035,7 +6035,7 @@ var _matchPath2 = _interopRequireDefault(_matchPath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/matchPath":39}],68:[function(require,module,exports) {
+},{"react-router/es/matchPath":53}],102:[function(require,module,exports) {
 var define;
 var global = arguments[3];
 /**
@@ -6111,7 +6111,7 @@ var global = arguments[3];
     };
 })));
 
-},{}],42:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6179,7 +6179,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"react":5,"prop-types":32,"hoist-non-react-statics":68,"./Route":36}],21:[function(require,module,exports) {
+},{"react":5,"prop-types":45,"hoist-non-react-statics":102,"./Route":50}],22:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6193,7 +6193,7 @@ var _withRouter2 = _interopRequireDefault(_withRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/withRouter":42}],7:[function(require,module,exports) {
+},{"react-router/es/withRouter":54}],7:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6273,7 +6273,69 @@ exports.Switch = _Switch3.default;
 exports.generatePath = _generatePath3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./BrowserRouter":8,"./HashRouter":9,"./Link":10,"./MemoryRouter":11,"./NavLink":12,"./Prompt":13,"./Redirect":14,"./Route":15,"./Router":16,"./StaticRouter":17,"./Switch":18,"./generatePath":19,"./matchPath":20,"./withRouter":21}],26:[function(require,module,exports) {
+},{"./BrowserRouter":9,"./HashRouter":10,"./Link":11,"./MemoryRouter":12,"./NavLink":13,"./Prompt":14,"./Redirect":15,"./Route":16,"./Router":17,"./StaticRouter":18,"./Switch":19,"./generatePath":20,"./matchPath":21,"./withRouter":22}],34:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UserArea = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var UserArea = exports.UserArea = function UserArea(props) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'div',
+      { className: 'wrap-collabsible index-10' },
+      _react2.default.createElement('input', { id: 'user-collapsible', className: 'toggle', type: 'checkbox' }),
+      _react2.default.createElement(
+        'label',
+        { htmlFor: 'user-collapsible', className: 'user-lbl-toggle' },
+        props.app.state.user.nombres.split(" ")[0]
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'collapsible-content' },
+        _react2.default.createElement(
+          'div',
+          { className: 'user-content-inner' },
+          _react2.default.createElement(
+            'ul',
+            null,
+            props.app.state.user.idPerfil == 1 && _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/admin' },
+                'Administrar'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/logout' },
+                'logout'
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+},{"react":5,"react-router-dom":7}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6291,85 +6353,102 @@ var _logo2 = _interopRequireDefault(_logo);
 
 var _reactRouterDom = require('react-router-dom');
 
+var _AppContext = require('../AppContext');
+
+var _UserArea = require('./UserArea');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var base = "";
+//const base = "/SistemaCinema";
 
 var Header = exports.Header = function Header() {
   return _react2.default.createElement(
-    'header',
-    { className: 'header' },
-    _react2.default.createElement(
-      'div',
-      { className: 'header-container' },
-      _react2.default.createElement(
-        'div',
-        { className: 'col-12 row align-items-center' },
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return _react2.default.createElement(
+        'header',
+        { className: 'header' },
         _react2.default.createElement(
           'div',
-          { className: 'col-12 col-md-4' },
+          { className: 'header-container' },
           _react2.default.createElement(
-            _reactRouterDom.Link,
-            { className: 'no-a row align-items-center justify-content-center', to: '/' },
+            'div',
+            { className: 'col-12 row align-items-center' },
             _react2.default.createElement(
               'div',
-              { className: 'col-4' },
-              _react2.default.createElement('img', { className: 'logo-img', src: _logo2.default, alt: '' })
+              { className: 'col-12 col-md-4' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: 'no-a row align-items-center justify-content-center', to: base + "/" },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-4' },
+                  _react2.default.createElement('img', { className: 'logo-img', src: _logo2.default, alt: '' })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-4' },
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'CineFisi'
+                  )
+                )
+              )
             ),
             _react2.default.createElement(
+              'nav',
+              { className: 'nav col-12 col-md-6 row' },
+              _react2.default.createElement(
+                'ul',
+                { className: 'col-12 row align-items-center header-list' },
+                _react2.default.createElement(
+                  'li',
+                  { className: 'col-12 col-md-4 center' },
+                  _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: base + "/movies", className: 'nav-links' },
+                    'Cartelera'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'col-12 col-md-4 center' },
+                  _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: base + "/promotions", className: 'nav-links' },
+                    'Promociones'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'col-12 col-md-4 center' },
+                  _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: base + "/candies", className: 'nav-links' },
+                    'Dulceria'
+                  )
+                )
+              )
+            ),
+            !app.state.user ? _react2.default.createElement(
               'div',
-              { className: 'col-4' },
+              { className: 'col-12 col-md-2 center header-login' },
               _react2.default.createElement(
-                'span',
-                null,
-                'CineFisi'
+                _reactRouterDom.Link,
+                { to: base + "/login" },
+                _react2.default.createElement('i', { className: 'fa fa-user-o', 'aria-hidden': 'true' })
               )
-            )
+            ) : _react2.default.createElement(_UserArea.UserArea, { app: app })
           )
-        ),
-        _react2.default.createElement(
-          'nav',
-          { className: 'nav col-12 col-md-6 row' },
-          _react2.default.createElement(
-            'ul',
-            { className: 'col-12 row align-items-center header-list' },
-            _react2.default.createElement(
-              'li',
-              { className: 'col-12 col-md-4 center' },
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/movies', className: 'nav-links' },
-                'Cartelera'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'col-12 col-md-4 center' },
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/promotions', className: 'nav-links' },
-                'Promociones'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'col-12 col-md-4 center' },
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/candies', className: 'nav-links' },
-                'Dulceria'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'col-12 col-md-2 center header-login' },
-          _react2.default.createElement('i', { className: 'fa fa-user-o', 'aria-hidden': 'true' })
         )
-      )
-    )
+      );
+    }
   );
 };
-},{"react":5,"../../img/logo-128.png":44,"react-router-dom":7}],89:[function(require,module,exports) {
+},{"react":5,"../../img/logo-128.png":33,"react-router-dom":7,"../AppContext":23,"./UserArea":34}],108:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6455,7 +6534,7 @@ var Select = exports.Select = function (_React$PureComponent) {
 }(_react2.default.PureComponent);
 
 ;
-},{"react":5}],76:[function(require,module,exports) {
+},{"react":5}],80:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6537,7 +6616,7 @@ var FilterSelect = function (_React$PureComponent) {
 }(_react2.default.PureComponent);
 
 exports.default = FilterSelect;
-},{"react":5,"./Select":89}],77:[function(require,module,exports) {
+},{"react":5,"./Select":108}],81:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6656,7 +6735,7 @@ var Promociones = exports.Promociones = function Promociones(props) {
     )
   );
 };
-},{"react":5}],78:[function(require,module,exports) {
+},{"react":5}],82:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6703,13 +6782,13 @@ var MovieSlider = exports.MovieSlider = function MovieSlider(props) {
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: '/movies/' + props.id, className: 'btn-comprar' },
-        _react2.default.createElement('i', { 'class': 'fa fa-plus', 'aria-hidden': 'true' }),
+        _react2.default.createElement('i', { className: 'fa fa-plus', 'aria-hidden': 'true' }),
         '\xA0Detalles'
       )
     )
   );
 };
-},{"react":5,"react-router-dom":7}],46:[function(require,module,exports) {
+},{"react":5,"react-router-dom":7}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -6738,6 +6817,7 @@ var Home = exports.Home = function Home(props) {
     _AppContext.AppContext.Consumer,
     null,
     function (app) {
+      app.fn.getHome();
       return _react2.default.createElement(
         'div',
         null,
@@ -6758,7 +6838,7 @@ var Home = exports.Home = function Home(props) {
             { className: 'home-sections' },
             'Dulceria'
           ),
-          _react2.default.createElement(_Promociones.Promociones, null)
+          _react2.default.createElement(_Promociones.Promociones, { app: app })
         ),
         _react2.default.createElement(
           'section',
@@ -6808,7 +6888,7 @@ var Home = exports.Home = function Home(props) {
             _react2.default.createElement(
               'a',
               { className: 'carousel-control-prev', href: '#carousel-movies', role: 'button', 'data-slide': 'prev' },
-              _react2.default.createElement('i', { 'class': 'fa fa-chevron-left', 'aria-hidden': 'true' }),
+              _react2.default.createElement('i', { className: 'fa fa-chevron-left', 'aria-hidden': 'true' }),
               _react2.default.createElement(
                 'span',
                 { className: 'sr-only' },
@@ -6818,7 +6898,7 @@ var Home = exports.Home = function Home(props) {
             _react2.default.createElement(
               'a',
               { className: 'carousel-control-next', href: '#carousel-movies', role: 'button', 'data-slide': 'next' },
-              _react2.default.createElement('i', { 'class': 'fa fa-chevron-right', 'aria-hidden': 'true' }),
+              _react2.default.createElement('i', { className: 'fa fa-chevron-right', 'aria-hidden': 'true' }),
               _react2.default.createElement(
                 'span',
                 { className: 'sr-only' },
@@ -6831,445 +6911,42 @@ var Home = exports.Home = function Home(props) {
     }
   );
 };
-},{"react":5,"../AppContext":25,"./FilterSelect":76,"./Promociones":77,"./MovieSlider":78}],87:[function(require,module,exports) {
+},{"react":5,"../AppContext":23,"./FilterSelect":80,"./Promociones":81,"./MovieSlider":82}],83:[function(require,module,exports) {
 "use strict";
-
-exports.__esModule = true;
-
-var _pathToRegexp = require("path-to-regexp");
-
-var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var patternCache = {};
-var cacheLimit = 10000;
-var cacheCount = 0;
-
-var compilePath = function compilePath(pattern, options) {
-  var cacheKey = "" + options.end + options.strict + options.sensitive;
-  var cache = patternCache[cacheKey] || (patternCache[cacheKey] = {});
-
-  if (cache[pattern]) return cache[pattern];
-
-  var keys = [];
-  var re = (0, _pathToRegexp2.default)(pattern, keys, options);
-  var compiledPattern = { re: re, keys: keys };
-
-  if (cacheCount < cacheLimit) {
-    cache[pattern] = compiledPattern;
-    cacheCount++;
-  }
-
-  return compiledPattern;
-};
-
-/**
- * Public API for matching a URL pathname to a path pattern.
- */
-var matchPath = function matchPath(pathname) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var parent = arguments[2];
-
-  if (typeof options === "string") options = { path: options };
-
-  var _options = options,
-      path = _options.path,
-      _options$exact = _options.exact,
-      exact = _options$exact === undefined ? false : _options$exact,
-      _options$strict = _options.strict,
-      strict = _options$strict === undefined ? false : _options$strict,
-      _options$sensitive = _options.sensitive,
-      sensitive = _options$sensitive === undefined ? false : _options$sensitive;
-
-
-  if (path == null) return parent;
-
-  var _compilePath = compilePath(path, { end: exact, strict: strict, sensitive: sensitive }),
-      re = _compilePath.re,
-      keys = _compilePath.keys;
-
-  var match = re.exec(pathname);
-
-  if (!match) return null;
-
-  var url = match[0],
-      values = match.slice(1);
-
-  var isExact = pathname === url;
-
-  if (exact && !isExact) return null;
-
-  return {
-    path: path, // the path pattern used to match
-    url: path === "/" && url === "" ? "/" : url, // the matched portion of the URL
-    isExact: isExact, // whether or not we matched exactly
-    params: keys.reduce(function (memo, key, index) {
-      memo[key.name] = values[index];
-      return memo;
-    }, {})
-  };
-};
-
-exports.default = matchPath;
-},{"path-to-regexp":67}],71:[function(require,module,exports) {
-"use strict";
-
-exports.__esModule = true;
-
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = require("prop-types");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _warning = require("warning");
-
-var _warning2 = _interopRequireDefault(_warning);
-
-var _invariant = require("invariant");
-
-var _invariant2 = _interopRequireDefault(_invariant);
-
-var _matchPath = require("./matchPath");
-
-var _matchPath2 = _interopRequireDefault(_matchPath);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * The public API for rendering the first <Route> that matches.
- */
-var Switch = function (_React$Component) {
-  _inherits(Switch, _React$Component);
-
-  function Switch() {
-    _classCallCheck(this, Switch);
-
-    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-  }
-
-  Switch.prototype.componentWillMount = function componentWillMount() {
-    (0, _invariant2.default)(this.context.router, "You should not use <Switch> outside a <Router>");
-  };
-
-  Switch.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-    (0, _warning2.default)(!(nextProps.location && !this.props.location), '<Switch> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
-
-    (0, _warning2.default)(!(!nextProps.location && this.props.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
-  };
-
-  Switch.prototype.render = function render() {
-    var route = this.context.router.route;
-    var children = this.props.children;
-
-    var location = this.props.location || route.location;
-
-    var match = void 0,
-        child = void 0;
-    _react2.default.Children.forEach(children, function (element) {
-      if (match == null && _react2.default.isValidElement(element)) {
-        var _element$props = element.props,
-            pathProp = _element$props.path,
-            exact = _element$props.exact,
-            strict = _element$props.strict,
-            sensitive = _element$props.sensitive,
-            from = _element$props.from;
-
-        var path = pathProp || from;
-
-        child = element;
-        match = (0, _matchPath2.default)(location.pathname, { path: path, exact: exact, strict: strict, sensitive: sensitive }, route.match);
-      }
-    });
-
-    return match ? _react2.default.cloneElement(child, { location: location, computedMatch: match }) : null;
-  };
-
-  return Switch;
-}(_react2.default.Component);
-
-Switch.contextTypes = {
-  router: _propTypes2.default.shape({
-    route: _propTypes2.default.object.isRequired
-  }).isRequired
-};
-Switch.propTypes = {
-  children: _propTypes2.default.node,
-  location: _propTypes2.default.object
-};
-exports.default = Switch;
-},{"react":5,"prop-types":32,"warning":30,"invariant":33,"./matchPath":87}],48:[function(require,module,exports) {
-"use strict";
-
-exports.__esModule = true;
-
-var _Switch = require("react-router/Switch");
-
-var _Switch2 = _interopRequireDefault(_Switch);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/Switch":71}],70:[function(require,module,exports) {
-"use strict";
-
-exports.__esModule = true;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _warning = require("warning");
-
-var _warning2 = _interopRequireDefault(_warning);
-
-var _invariant = require("invariant");
-
-var _invariant2 = _interopRequireDefault(_invariant);
-
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = require("prop-types");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _matchPath = require("./matchPath");
-
-var _matchPath2 = _interopRequireDefault(_matchPath);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var isEmptyChildren = function isEmptyChildren(children) {
-  return _react2.default.Children.count(children) === 0;
-};
-
-/**
- * The public API for matching a single path and rendering.
- */
-
-var Route = function (_React$Component) {
-  _inherits(Route, _React$Component);
-
-  function Route() {
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, Route);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-      match: _this.computeMatch(_this.props, _this.context.router)
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  Route.prototype.getChildContext = function getChildContext() {
-    return {
-      router: _extends({}, this.context.router, {
-        route: {
-          location: this.props.location || this.context.router.route.location,
-          match: this.state.match
-        }
-      })
-    };
-  };
-
-  Route.prototype.computeMatch = function computeMatch(_ref, router) {
-    var computedMatch = _ref.computedMatch,
-        location = _ref.location,
-        path = _ref.path,
-        strict = _ref.strict,
-        exact = _ref.exact,
-        sensitive = _ref.sensitive;
-
-    if (computedMatch) return computedMatch; // <Switch> already computed the match for us
-
-    (0, _invariant2.default)(router, "You should not use <Route> or withRouter() outside a <Router>");
-
-    var route = router.route;
-
-    var pathname = (location || route.location).pathname;
-
-    return (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact, sensitive: sensitive }, route.match);
-  };
-
-  Route.prototype.componentWillMount = function componentWillMount() {
-    (0, _warning2.default)(!(this.props.component && this.props.render), "You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored");
-
-    (0, _warning2.default)(!(this.props.component && this.props.children && !isEmptyChildren(this.props.children)), "You should not use <Route component> and <Route children> in the same route; <Route children> will be ignored");
-
-    (0, _warning2.default)(!(this.props.render && this.props.children && !isEmptyChildren(this.props.children)), "You should not use <Route render> and <Route children> in the same route; <Route children> will be ignored");
-  };
-
-  Route.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps, nextContext) {
-    (0, _warning2.default)(!(nextProps.location && !this.props.location), '<Route> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
-
-    (0, _warning2.default)(!(!nextProps.location && this.props.location), '<Route> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
-
-    this.setState({
-      match: this.computeMatch(nextProps, nextContext.router)
-    });
-  };
-
-  Route.prototype.render = function render() {
-    var match = this.state.match;
-    var _props = this.props,
-        children = _props.children,
-        component = _props.component,
-        render = _props.render;
-    var _context$router = this.context.router,
-        history = _context$router.history,
-        route = _context$router.route,
-        staticContext = _context$router.staticContext;
-
-    var location = this.props.location || route.location;
-    var props = { match: match, location: location, history: history, staticContext: staticContext };
-
-    if (component) return match ? _react2.default.createElement(component, props) : null;
-
-    if (render) return match ? render(props) : null;
-
-    if (typeof children === "function") return children(props);
-
-    if (children && !isEmptyChildren(children)) return _react2.default.Children.only(children);
-
-    return null;
-  };
-
-  return Route;
-}(_react2.default.Component);
-
-Route.propTypes = {
-  computedMatch: _propTypes2.default.object, // private, from <Switch>
-  path: _propTypes2.default.string,
-  exact: _propTypes2.default.bool,
-  strict: _propTypes2.default.bool,
-  sensitive: _propTypes2.default.bool,
-  component: _propTypes2.default.func,
-  render: _propTypes2.default.func,
-  children: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.node]),
-  location: _propTypes2.default.object
-};
-Route.contextTypes = {
-  router: _propTypes2.default.shape({
-    history: _propTypes2.default.object.isRequired,
-    route: _propTypes2.default.object.isRequired,
-    staticContext: _propTypes2.default.object
-  })
-};
-Route.childContextTypes = {
-  router: _propTypes2.default.object.isRequired
-};
-exports.default = Route;
-},{"warning":30,"invariant":33,"react":5,"prop-types":32,"./matchPath":87}],49:[function(require,module,exports) {
-"use strict";
-
-exports.__esModule = true;
-
-var _Route = require("react-router/Route");
-
-var _Route2 = _interopRequireDefault(_Route);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/Route":70}],74:[function(require,module,exports) {
-'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Accordion = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Accordion = function (_React$PureComponent) {
-  _inherits(Accordion, _React$PureComponent);
-
-  function Accordion() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, Accordion);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Accordion.__proto__ || Object.getPrototypeOf(Accordion)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      active: false
-    }, _this.handleButton = function () {
-      _this.setState({ active: !_this.state.active });
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(Accordion, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'button',
-          { onClick: this.handleButton },
-          this.props.title
-        ),
-        _react2.default.createElement(
-          'ul',
-          { className: this.state.active ? 'display-block' : 'display-none' },
-          _react2.default.createElement(
-            'li',
-            null,
-            'Accion'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Comedia'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Drama'
-          )
-        )
-      );
-    }
-  }]);
-
-  return Accordion;
-}(_react2.default.PureComponent);
-
-exports.default = Accordion;
-},{"react":5}],75:[function(require,module,exports) {
+var Accordion = exports.Accordion = function Accordion(props) {
+  return _react2.default.createElement(
+    "div",
+    { className: "wrap-collabsible" },
+    _react2.default.createElement("input", { id: "collapsible", className: "toggle", type: "checkbox" }),
+    _react2.default.createElement(
+      "label",
+      { htmlFor: "collapsible", className: "lbl-toggle" },
+      props.title
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "collapsible-content" },
+      _react2.default.createElement(
+        "div",
+        { className: "content-inner" },
+        props.children
+      )
+    )
+  );
+};
+},{"react":5}],84:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7290,52 +6967,48 @@ var MovieCard = exports.MovieCard = function MovieCard(props) {
     'div',
     { className: 'movie-card' },
     _react2.default.createElement(
-      'a',
-      null,
+      'div',
+      { className: 'movie-card-img' },
+      _react2.default.createElement('a', { className: 'movie-card-img-no-visible' }),
+      _react2.default.createElement('img', { src: props.img })
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'movie-card-description' },
       _react2.default.createElement(
         'div',
-        { className: 'movie-card-img' },
-        _react2.default.createElement('a', { className: 'movie-card-img-no-visible' }),
-        _react2.default.createElement('img', { src: props.img })
+        { className: 'movie-card-description-title' },
+        props.title
       ),
       _react2.default.createElement(
         'div',
-        { className: 'movie-card-description' },
+        { className: 'movie-card-description-info' },
+        props.info
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'movie-card-actions-container' },
+      _react2.default.createElement(
+        'div',
+        { className: 'movie-card-actions' },
         _react2.default.createElement(
-          'div',
-          { className: 'movie-card-description-title' },
-          props.title
+          _reactRouterDom.Link,
+          { to: '/movies/' + props.id, className: 'btn-comprar' },
+          _react2.default.createElement('i', { className: 'fa fa-shopping-cart', 'aria-hidden': 'true' }),
+          '\xA0Comprar'
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'movie-card-description-info' },
-          props.info
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'movie-card-actions-container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'movie-card-actions' },
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/movies/' + props.id, className: 'btn-comprar' },
-            _react2.default.createElement('i', { className: 'fa fa-shopping-cart', 'aria-hidden': 'true' }),
-            '\xA0Comprar'
-          ),
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/movies/' + props.id, className: 'btn-comprar' },
-            _react2.default.createElement('i', { className: 'fa fa-plus', 'aria-hidden': 'true' }),
-            '\xA0Detalles'
-          )
+          _reactRouterDom.Link,
+          { to: '/movies/' + props.id, className: 'btn-comprar' },
+          _react2.default.createElement('i', { className: 'fa fa-plus', 'aria-hidden': 'true' }),
+          '\xA0Detalles'
         )
       )
     )
   );
 };
-},{"react":5,"react-router-dom":7}],47:[function(require,module,exports) {
+},{"react":5,"react-router-dom":7}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7349,63 +7022,1024 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Accordion = require('./Accordion');
 
-var _Accordion2 = _interopRequireDefault(_Accordion);
-
 var _MovieCard = require('./MovieCard');
+
+var _AppContext = require('../AppContext');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Movies = exports.Movies = function Movies(props) {
   return _react2.default.createElement(
-    'div',
-    { className: 'container' },
-    _react2.default.createElement(
-      'div',
-      { className: 'movies-header' },
-      _react2.default.createElement(
-        'h1',
-        null,
-        'Peliculas'
-      ),
-      _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return _react2.default.createElement(
         'div',
-        { className: 'movies-header-options' },
+        { className: 'container' },
         _react2.default.createElement(
-          'ul',
-          null,
+          'div',
+          { className: 'movies-header' },
           _react2.default.createElement(
-            'li',
+            'h1',
             null,
-            'En cartelera'
+            'Peliculas'
           ),
           _react2.default.createElement(
-            'li',
+            'div',
+            { className: 'movies-header-options' },
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'En cartelera'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Pr\xF3ximos estrenos'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-3 movies-filter' },
+            _react2.default.createElement(
+              _Accordion.Accordion,
+              { title: 'Genero' },
+              _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    { onClick: app.fn.getFilter },
+                    _react2.default.createElement('input', { type: 'hidden', name: 'filter', value: '1' }),
+                    _react2.default.createElement('input', { type: 'hidden', name: 'type', value: '1' }),
+                    'Comedia'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Terror'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Thriller'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Acci\xF3n'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-9 movies-cards-container' },
+            _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
+            _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
+            _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
+            _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' })
+          )
+        )
+      );
+    }
+  );
+};
+},{"react":5,"./Accordion":83,"./MovieCard":84,"../AppContext":23}],37:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Movie = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _AppContext = require('../AppContext');
+
+var _Accordion = require('./Accordion');
+
+var _FilterSelect = require('./FilterSelect');
+
+var _FilterSelect2 = _interopRequireDefault(_FilterSelect);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Movie = exports.Movie = function Movie(_ref) {
+  var match = _ref.match;
+
+  var id = match.params.id;
+  console.log(id);
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'movie' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'movie-header' },
+              _react2.default.createElement(
+                'h2',
+                null,
+                'Los Increibles'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'movie-body row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'movie-left col-12 col-md-5' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-left-img' },
+                  _react2.default.createElement('img', { src: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'movie-right col-12 col-md-7' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-sinopsis' },
+                  _react2.default.createElement(
+                    'center',
+                    null,
+                    'Sinopsis'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Esta pel\xEDcula contiene escenas con luces intermitentes que pueden afectar a aquellos espectadores que padezcan epilepsia fotosensible o trastornos similares. APT: Pel\xEDcula apta para todo p\xFAblico* Secuela de "Los incre\xEDbles". Helen tiene que liderar una campa\xF1a para que los superh\xE9roes regresen, mientras Bob vive su vida "normal" con Violet, Dash y el beb\xE9 Jack-Jack \u2014cuyos superpoderes descubriremos\u2014. Su misi\xF3n se va a pique cuando aparece un nuevo villano con un brillante plan que lo amenaza todo. Pero los Parr no se amedrentar\xE1n y menos teniendo a Frozone de su parte.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-detail' },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    'Detalle'
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    null,
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Animacion'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '|'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '2h 10m'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '|'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'APT'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-director' },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    'Director'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Brad Bird'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-languaje' },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    'Idioma'
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    null,
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'SUB'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'DOB'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-types' },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    'Disponible'
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    null,
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Regular'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      '2D'
+                    ),
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Prime'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'movie-actors' },
+                  _react2.default.createElement(
+                    'b',
+                    null,
+                    'ACTORES'
+                  ),
+                  _react2.default.createElement(
+                    'ul',
+                    null,
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Mister increible'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'movie-search-container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'movie-search-filters' },
+              _react2.default.createElement(_FilterSelect2.default, null)
+            ),
+            _react2.default.createElement(_Accordion.Accordion, { title: 'CF Lima' })
+          )
+        )
+      );
+    }
+  );
+};
+},{"react":5,"react-router-dom":7,"../AppContext":23,"./Accordion":83,"./FilterSelect":80}],38:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Login = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AppContext = require('../AppContext');
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Login = exports.Login = function Login(props) {
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return !app.state.user ? _react2.default.createElement(
+        'div',
+        { className: 'login' },
+        _react2.default.createElement(
+          'div',
+          { className: 'login-header' },
+          _react2.default.createElement('i', { className: 'fa fa-user-o login-header-icon', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'login-body' },
+          _react2.default.createElement(
+            'form',
+            { onSubmit: app.fn.loginController },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Usuario'
+              ),
+              _react2.default.createElement('input', { type: 'text', name: 'user', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Password'
+              ),
+              _react2.default.createElement('input', { type: 'password', name: 'password', required: true })
+            ),
+            _react2.default.createElement('input', { type: 'submit', value: 'Ingresar' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'login-footer' },
+          _react2.default.createElement(
+            'p',
             null,
-            'Pr\xF3ximos estrenos'
+            '\xBFNo estas registrado? Registrate ',
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: 'register' },
+              'aqu\xED'
+            )
+          )
+        )
+      ) : _react2.default.createElement(_reactRouterDom.Redirect, { to: '/' });
+    }
+  );
+};
+},{"react":5,"../AppContext":23,"react-router-dom":7}],39:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Register = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AppContext = require('../AppContext');
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Register = exports.Register = function Register(props) {
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return !app.state.user ? _react2.default.createElement(
+        'div',
+        { className: 'register' },
+        _react2.default.createElement(
+          'div',
+          { className: 'register-header' },
+          _react2.default.createElement('i', { className: 'fa fa-user-o login-header-icon', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'register-body' },
+          _react2.default.createElement(
+            'form',
+            { onSubmit: app.fn.registerController, method: 'POST' },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Nombres'
+              ),
+              _react2.default.createElement('input', { type: 'text', name: 'name', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Apellido Paterno'
+              ),
+              _react2.default.createElement('input', { type: 'text', name: 'apePat', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Apellido Materno'
+              ),
+              _react2.default.createElement('input', { type: 'text', name: 'apeMat', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Dni'
+              ),
+              _react2.default.createElement('input', { type: 'text', name: 'dni', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Password'
+              ),
+              _react2.default.createElement('input', { type: 'password', name: 'password', required: true })
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'label',
+                null,
+                'Re-Password'
+              ),
+              _react2.default.createElement('input', { type: 'password', name: 'repassword', required: true })
+            ),
+            _react2.default.createElement('input', { type: 'submit', value: 'Registrarse' })
+          )
+        )
+      ) : _react2.default.createElement(_reactRouterDom.Redirect, { to: '/' });
+    }
+  );
+};
+},{"react":5,"../AppContext":23,"react-router-dom":7}],40:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Candies = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Promociones = require('./Promociones');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Candies = exports.Candies = function Candies() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'container' },
+    _react2.default.createElement(_Promociones.Promociones, null)
+  );
+};
+},{"react":5,"./Promociones":81}],41:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.NotFound = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NotFound = exports.NotFound = function NotFound() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Not Found 404'
+    )
+  );
+};
+},{"react":5}],90:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.AdminOptions = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AdminOptions = exports.AdminOptions = function AdminOptions() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'container admin-options-container' },
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/empleados' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-users', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Empleados'
           )
         )
       )
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'row' },
+      _reactRouterDom.Link,
+      { to: '/admin/cines' },
       _react2.default.createElement(
         'div',
-        { className: 'col-3 movies-filter' },
-        _react2.default.createElement(_Accordion2.default, { title: 'Genero' })
-      ),
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-video-camera', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Cines'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/movies' },
       _react2.default.createElement(
         'div',
-        { className: 'col-9 movies-cards-container' },
-        _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
-        _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
-        _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' }),
-        _react2.default.createElement(_MovieCard.MovieCard, { img: 'https://cineplanetstatic.azureedge.net/CDN/media/entity/get/FilmPosterGraphic/HO00000173?referenceScheme=HeadOffice&allowPlaceHolder=true', title: 'Los increibles 2', info: 'Animacion, 2h 10min, APT', id: '4784' })
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-film', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Peliculas'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/cities' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { 'class': 'fa fa-home', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Ciudades'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/candies' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-cutlery', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Dulceria'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/promotions' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-shopping-bag', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Promociones'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/boleteria' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-ticket', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Boleteria'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/ventas' },
+      _react2.default.createElement(
+        'div',
+        { className: 'admin-option' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-icon' },
+          _react2.default.createElement('i', { className: 'fa fa-area-chart', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-option-name' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Ventas'
+          )
+        )
       )
     )
   );
 };
-},{"react":5,"./Accordion":74,"./MovieCard":75}],27:[function(require,module,exports) {
+},{"react":5,"react-router-dom":7}],91:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.AdminEmployees = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AdminEmployees = exports.AdminEmployees = function AdminEmployees() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Empleados'
+    ),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/admin/empleados/register' },
+      'Registrar empleado'
+    )
+  );
+};
+},{"react":5,"react-router-dom":7}],92:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.EmployeeRegister = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AppContext = require('../AppContext');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EmployeeRegister = exports.EmployeeRegister = function (_React$PureComponent) {
+  _inherits(EmployeeRegister, _React$PureComponent);
+
+  function EmployeeRegister() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, EmployeeRegister);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = EmployeeRegister.__proto__ || Object.getPrototypeOf(EmployeeRegister)).call.apply(_ref, [this].concat(args))), _this), _this.photo = _react2.default.createRef(), _this.state = {
+      photo: null,
+      thumbnail: ""
+    }, _this.handleUploadPhoto = function () {
+      cloudinary.openUploadWidget({
+        cloud_name: 'di9ypoqyl', max_files: 1, multiple: false,
+        upload_preset: 'aptpylfv'
+      }, function (err, res) {
+        if (err) return console.log(err);
+        _this.setState({ photo: res[0].secure_url, thumbnail: res[0].thumbnail_url });
+      });
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(EmployeeRegister, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _AppContext.AppContext.Consumer,
+        null,
+        function (app) {
+          return _react2.default.createElement(
+            'div',
+            { className: 'register' },
+            _react2.default.createElement(
+              'div',
+              { className: 'register-header' },
+              !_this2.state.photo ? _react2.default.createElement('i', { className: 'fa fa-user-o login-header-icon', 'aria-hidden': 'true' }) : _react2.default.createElement('img', { src: _this2.state.thumbnail })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'register-body' },
+              _react2.default.createElement(
+                'form',
+                { onSubmit: app.fn.registerController },
+                _react2.default.createElement(
+                  'div',
+                  { id: 'upload_widget_opener', onClick: _this2.handleUploadPhoto },
+                  'Subir imagen'
+                ),
+                _react2.default.createElement('input', { type: 'hidden', name: 'photo', value: _this2.state.thumbnail }),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Nombres'
+                  ),
+                  _react2.default.createElement('input', { type: 'text', name: 'name', required: true })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Apellido Paterno'
+                  ),
+                  _react2.default.createElement('input', { type: 'text', name: 'apePat', required: true })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Apellido Materno'
+                  ),
+                  _react2.default.createElement('input', { type: 'text', name: 'apeMat', required: true })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Cine'
+                  ),
+                  _react2.default.createElement(
+                    'select',
+                    { name: 'cine', defaultValue: '0' },
+                    _react2.default.createElement(
+                      'option',
+                      { value: '0' },
+                      'CINES'
+                    ),
+                    app.state.cines.map(function (c) {
+                      return _react2.default.createElement(
+                        'option',
+                        { value: c.codigo },
+                        c.nombre
+                      );
+                    })
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Dni'
+                  ),
+                  _react2.default.createElement('input', { type: 'text', name: 'dni', required: true })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Password'
+                  ),
+                  _react2.default.createElement('input', { type: 'password', name: 'password', required: true })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Re-Password'
+                  ),
+                  _react2.default.createElement('input', { type: 'password', name: 'repassword', required: true })
+                ),
+                _react2.default.createElement('input', { type: 'submit', value: 'Registrarse' })
+              )
+            )
+          );
+        }
+      );
+    }
+  }]);
+
+  return EmployeeRegister;
+}(_react2.default.PureComponent);
+},{"react":5,"../AppContext":23}],42:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Admin = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AppContext = require('../AppContext');
+
+var _AdminOptions = require('./AdminOptions');
+
+var _reactRouterDom = require('react-router-dom');
+
+var _AdminEmployees = require('./AdminEmployees');
+
+var _Accordion = require('./Accordion');
+
+var _EmployeeRegister = require('./EmployeeRegister');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Admin = exports.Admin = function Admin() {
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return _react2.default.createElement(
+        'div',
+        { className: 'admin-container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'admin-accordion-options' },
+          _react2.default.createElement(
+            _Accordion.Accordion,
+            { title: 'Administrador opciones' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/admin/empleados' },
+              'Empleados'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.Switch,
+            null,
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/admin/', component: _AdminOptions.AdminOptions }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/admin/empleados', component: _AdminEmployees.AdminEmployees }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/admin/empleados/register', component: _EmployeeRegister.EmployeeRegister })
+          )
+        )
+      );
+    }
+  );
+};
+},{"react":5,"../AppContext":23,"./AdminOptions":90,"react-router-dom":7,"./AdminEmployees":91,"./Accordion":83,"./EmployeeRegister":92}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7419,32 +8053,56 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Home = require('./Home');
 
-var _Switch = require('react-router-dom/Switch');
-
-var _Switch2 = _interopRequireDefault(_Switch);
-
-var _Route = require('react-router-dom/Route');
-
-var _Route2 = _interopRequireDefault(_Route);
+var _reactRouterDom = require('react-router-dom');
 
 var _Movies = require('./Movies');
 
+var _Movie = require('./Movie');
+
+var _Login = require('./Login');
+
+var _Register = require('./Register');
+
+var _Candies = require('./Candies');
+
+var _NotFound = require('./NotFound');
+
+var _Admin = require('./Admin');
+
+var _AppContext = require('../AppContext');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Logout = function Logout() {
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return app.state.user ? app.fn.logoutController() : _react2.default.createElement(_reactRouterDom.Redirect, { to: '/' });
+    }
+  );
+};
 
 var Content = exports.Content = function Content() {
   return _react2.default.createElement(
     'main',
     { className: 'content' },
     _react2.default.createElement(
-      _Switch2.default,
+      _reactRouterDom.Switch,
       null,
-      _react2.default.createElement(_Route2.default, { exact: true, path: '/', component: _Home.Home }),
-      _react2.default.createElement(_Route2.default, { path: '/movies', component: _Movies.Movies }),
-      _react2.default.createElement(_Route2.default, { path: '/movies/:id', component: _Movies.Movies })
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home.Home }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/movies', component: _Movies.Movies }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/movies/:id', component: _Movie.Movie }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/login', component: _Login.Login }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/register', component: _Register.Register }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/candies', component: _Candies.Candies }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/admin', component: _Admin.Admin }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/logout', component: Logout }),
+      _react2.default.createElement(_reactRouterDom.Route, { component: _NotFound.NotFound })
     )
   );
 };
-},{"react":5,"./Home":46,"react-router-dom/Switch":48,"react-router-dom/Route":49,"./Movies":47}],28:[function(require,module,exports) {
+},{"react":5,"./Home":35,"react-router-dom":7,"./Movies":36,"./Movie":37,"./Login":38,"./Register":39,"./Candies":40,"./NotFound":41,"./Admin":42,"../AppContext":23}],27:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7469,7 +8127,2262 @@ var Footer = exports.Footer = function Footer(props) {
     )
   );
 };
-},{"react":5}],4:[function(require,module,exports) {
+},{"react":5}],97:[function(require,module,exports) {
+'use strict';
+
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
+
+},{}],114:[function(require,module,exports) {
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+},{}],88:[function(require,module,exports) {
+'use strict';
+
+var bind = require('./helpers/bind');
+var isBuffer = require('is-buffer');
+
+/*global toString:true*/
+
+// utils is a library of generic helper functions non-specific to axios
+
+var toString = Object.prototype.toString;
+
+/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Array, otherwise false
+ */
+function isArray(val) {
+  return toString.call(val) === '[object Array]';
+}
+
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */
+function isArrayBuffer(val) {
+  return toString.call(val) === '[object ArrayBuffer]';
+}
+
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */
+function isFormData(val) {
+  return (typeof FormData !== 'undefined') && (val instanceof FormData);
+}
+
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */
+function isArrayBufferView(val) {
+  var result;
+  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+    result = ArrayBuffer.isView(val);
+  } else {
+    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+  }
+  return result;
+}
+
+/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a String, otherwise false
+ */
+function isString(val) {
+  return typeof val === 'string';
+}
+
+/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Number, otherwise false
+ */
+function isNumber(val) {
+  return typeof val === 'number';
+}
+
+/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */
+function isUndefined(val) {
+  return typeof val === 'undefined';
+}
+
+/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Object, otherwise false
+ */
+function isObject(val) {
+  return val !== null && typeof val === 'object';
+}
+
+/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Date, otherwise false
+ */
+function isDate(val) {
+  return toString.call(val) === '[object Date]';
+}
+
+/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a File, otherwise false
+ */
+function isFile(val) {
+  return toString.call(val) === '[object File]';
+}
+
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */
+function isBlob(val) {
+  return toString.call(val) === '[object Blob]';
+}
+
+/**
+ * Determine if a value is a Function
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Function, otherwise false
+ */
+function isFunction(val) {
+  return toString.call(val) === '[object Function]';
+}
+
+/**
+ * Determine if a value is a Stream
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */
+function isStream(val) {
+  return isObject(val) && isFunction(val.pipe);
+}
+
+/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */
+function isURLSearchParams(val) {
+  return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+}
+
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ * @returns {String} The String freed of excess whitespace
+ */
+function trim(str) {
+  return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  navigator.product -> 'ReactNative'
+ */
+function isStandardBrowserEnv() {
+  if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
+    return false;
+  }
+  return (
+    typeof window !== 'undefined' &&
+    typeof document !== 'undefined'
+  );
+}
+
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ */
+function forEach(obj, fn) {
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') {
+    return;
+  }
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object') {
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  }
+
+  if (isArray(obj)) {
+    // Iterate over array values
+    for (var i = 0, l = obj.length; i < l; i++) {
+      fn.call(null, obj[i], i, obj);
+    }
+  } else {
+    // Iterate over object keys
+    for (var key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        fn.call(null, obj[key], key, obj);
+      }
+    }
+  }
+}
+
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ * @returns {Object} Result of all merge properties
+ */
+function merge(/* obj1, obj2, obj3, ... */) {
+  var result = {};
+  function assignValue(val, key) {
+    if (typeof result[key] === 'object' && typeof val === 'object') {
+      result[key] = merge(result[key], val);
+    } else {
+      result[key] = val;
+    }
+  }
+
+  for (var i = 0, l = arguments.length; i < l; i++) {
+    forEach(arguments[i], assignValue);
+  }
+  return result;
+}
+
+/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ * @return {Object} The resulting value of object a
+ */
+function extend(a, b, thisArg) {
+  forEach(b, function assignValue(val, key) {
+    if (thisArg && typeof val === 'function') {
+      a[key] = bind(val, thisArg);
+    } else {
+      a[key] = val;
+    }
+  });
+  return a;
+}
+
+module.exports = {
+  isArray: isArray,
+  isArrayBuffer: isArrayBuffer,
+  isBuffer: isBuffer,
+  isFormData: isFormData,
+  isArrayBufferView: isArrayBufferView,
+  isString: isString,
+  isNumber: isNumber,
+  isObject: isObject,
+  isUndefined: isUndefined,
+  isDate: isDate,
+  isFile: isFile,
+  isBlob: isBlob,
+  isFunction: isFunction,
+  isStream: isStream,
+  isURLSearchParams: isURLSearchParams,
+  isStandardBrowserEnv: isStandardBrowserEnv,
+  forEach: forEach,
+  merge: merge,
+  extend: extend,
+  trim: trim
+};
+
+},{"./helpers/bind":97,"is-buffer":114}],106:[function(require,module,exports) {
+'use strict';
+
+var utils = require('../utils');
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+},{"../utils":88}],127:[function(require,module,exports) {
+'use strict';
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+  error.request = request;
+  error.response = response;
+  return error;
+};
+
+},{}],121:[function(require,module,exports) {
+'use strict';
+
+var enhanceError = require('./enhanceError');
+
+/**
+ * Create an Error with the specified message, config, error code, request and response.
+ *
+ * @param {string} message The error message.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The created error.
+ */
+module.exports = function createError(message, config, code, request, response) {
+  var error = new Error(message);
+  return enhanceError(error, config, code, request, response);
+};
+
+},{"./enhanceError":127}],117:[function(require,module,exports) {
+'use strict';
+
+var createError = require('./createError');
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  // Note: status is not exposed by XDomainRequest
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError(
+      'Request failed with status code ' + response.status,
+      response.config,
+      null,
+      response.request,
+      response
+    ));
+  }
+};
+
+},{"./createError":121}],118:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+function encode(val) {
+  return encodeURIComponent(val).
+    replace(/%40/gi, '@').
+    replace(/%3A/gi, ':').
+    replace(/%24/g, '$').
+    replace(/%2C/gi, ',').
+    replace(/%20/g, '+').
+    replace(/%5B/gi, '[').
+    replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      } else {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+},{"./../utils":88}],119:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = [
+  'age', 'authorization', 'content-length', 'content-type', 'etag',
+  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
+  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
+  'referer', 'retry-after', 'user-agent'
+];
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) { return parsed; }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+        return;
+      }
+      if (key === 'set-cookie') {
+        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+      } else {
+        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+      }
+    }
+  });
+
+  return parsed;
+};
+
+},{"./../utils":88}],120:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+  (function standardBrowserEnv() {
+    var msie = /(msie|trident)/i.test(navigator.userAgent);
+    var urlParsingNode = document.createElement('a');
+    var originURL;
+
+    /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */
+    function resolveURL(url) {
+      var href = url;
+
+      if (msie) {
+        // IE needs attribute set twice to normalize properties
+        urlParsingNode.setAttribute('href', href);
+        href = urlParsingNode.href;
+      }
+
+      urlParsingNode.setAttribute('href', href);
+
+      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+      return {
+        href: urlParsingNode.href,
+        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+        host: urlParsingNode.host,
+        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+        hostname: urlParsingNode.hostname,
+        port: urlParsingNode.port,
+        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+                  urlParsingNode.pathname :
+                  '/' + urlParsingNode.pathname
+      };
+    }
+
+    originURL = resolveURL(window.location.href);
+
+    /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */
+    return function isURLSameOrigin(requestURL) {
+      var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+      return (parsed.protocol === originURL.protocol &&
+            parsed.host === originURL.host);
+    };
+  })() :
+
+  // Non standard browser envs (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return function isURLSameOrigin() {
+      return true;
+    };
+  })()
+);
+
+},{"./../utils":88}],122:[function(require,module,exports) {
+'use strict';
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function E() {
+  this.message = 'String contains an invalid character';
+}
+E.prototype = new Error;
+E.prototype.code = 5;
+E.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+    // initialize result and counter
+    var block, charCode, idx = 0, map = chars;
+    // if the next str index does not exist:
+    //   change the mapping table to "="
+    //   check if d has no fractional digits
+    str.charAt(idx | 0) || (map = '=', idx % 1);
+    // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+    output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+  ) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new E();
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+},{}],123:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs support document.cookie
+  (function standardBrowserEnv() {
+    return {
+      write: function write(name, value, expires, path, domain, secure) {
+        var cookie = [];
+        cookie.push(name + '=' + encodeURIComponent(value));
+
+        if (utils.isNumber(expires)) {
+          cookie.push('expires=' + new Date(expires).toGMTString());
+        }
+
+        if (utils.isString(path)) {
+          cookie.push('path=' + path);
+        }
+
+        if (utils.isString(domain)) {
+          cookie.push('domain=' + domain);
+        }
+
+        if (secure === true) {
+          cookie.push('secure');
+        }
+
+        document.cookie = cookie.join('; ');
+      },
+
+      read: function read(name) {
+        var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+        return (match ? decodeURIComponent(match[3]) : null);
+      },
+
+      remove: function remove(name) {
+        this.write(name, '', Date.now() - 86400000);
+      }
+    };
+  })() :
+
+  // Non standard browser env (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return {
+      write: function write() {},
+      read: function read() { return null; },
+      remove: function remove() {}
+    };
+  })()
+);
+
+},{"./../utils":88}],107:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+var settle = require('./../core/settle');
+var buildURL = require('./../helpers/buildURL');
+var parseHeaders = require('./../helpers/parseHeaders');
+var isURLSameOrigin = require('./../helpers/isURLSameOrigin');
+var createError = require('../core/createError');
+var btoa = typeof window !== 'undefined' && window.btoa && window.btoa.bind(window) || require('./../helpers/btoa');
+
+module.exports = function xhrAdapter(config) {
+  return new Promise(function dispatchXhrRequest(resolve, reject) {
+    var requestData = config.data;
+    var requestHeaders = config.headers;
+
+    if (utils.isFormData(requestData)) {
+      delete requestHeaders['Content-Type']; // Let the browser set it
+    }
+
+    var request = new XMLHttpRequest();
+    var loadEvent = 'onreadystatechange';
+    var xDomain = false;
+
+    // For IE 8/9 CORS support
+    // Only supports POST and GET calls and doesn't returns the response headers.
+    // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
+    if ('development' !== 'test' && typeof window !== 'undefined' && window.XDomainRequest && !('withCredentials' in request) && !isURLSameOrigin(config.url)) {
+      request = new window.XDomainRequest();
+      loadEvent = 'onload';
+      xDomain = true;
+      request.onprogress = function handleProgress() {};
+      request.ontimeout = function handleTimeout() {};
+    }
+
+    // HTTP basic authentication
+    if (config.auth) {
+      var username = config.auth.username || '';
+      var password = config.auth.password || '';
+      requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+    }
+
+    request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);
+
+    // Set the request timeout in MS
+    request.timeout = config.timeout;
+
+    // Listen for ready state
+    request[loadEvent] = function handleLoad() {
+      if (!request || request.readyState !== 4 && !xDomain) {
+        return;
+      }
+
+      // The request errored out and we didn't get a response, this will be
+      // handled by onerror instead
+      // With one exception: request that using file: protocol, most browsers
+      // will return status as 0 even though it's a successful request
+      if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
+        return;
+      }
+
+      // Prepare the response
+      var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+      var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
+      var response = {
+        data: responseData,
+        // IE sends 1223 instead of 204 (https://github.com/axios/axios/issues/201)
+        status: request.status === 1223 ? 204 : request.status,
+        statusText: request.status === 1223 ? 'No Content' : request.statusText,
+        headers: responseHeaders,
+        config: config,
+        request: request
+      };
+
+      settle(resolve, reject, response);
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle low level network errors
+    request.onerror = function handleError() {
+      // Real errors are hidden from us by the browser
+      // onerror should only fire if it's a network error
+      reject(createError('Network Error', config, null, request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle timeout
+    request.ontimeout = function handleTimeout() {
+      reject(createError('timeout of ' + config.timeout + 'ms exceeded', config, 'ECONNABORTED', request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Add xsrf header
+    // This is only done if running in a standard browser environment.
+    // Specifically not if we're in a web worker, or react-native.
+    if (utils.isStandardBrowserEnv()) {
+      var cookies = require('./../helpers/cookies');
+
+      // Add xsrf header
+      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ? cookies.read(config.xsrfCookieName) : undefined;
+
+      if (xsrfValue) {
+        requestHeaders[config.xsrfHeaderName] = xsrfValue;
+      }
+    }
+
+    // Add headers to the request
+    if ('setRequestHeader' in request) {
+      utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+        if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+          // Remove Content-Type if data is undefined
+          delete requestHeaders[key];
+        } else {
+          // Otherwise add header to the request
+          request.setRequestHeader(key, val);
+        }
+      });
+    }
+
+    // Add withCredentials to request if needed
+    if (config.withCredentials) {
+      request.withCredentials = true;
+    }
+
+    // Add responseType to request if needed
+    if (config.responseType) {
+      try {
+        request.responseType = config.responseType;
+      } catch (e) {
+        // Expected DOMException thrown by browsers not compatible XMLHttpRequest Level 2.
+        // But, this can be suppressed for 'json' type as it can be parsed by default 'transformResponse' function.
+        if (config.responseType !== 'json') {
+          throw e;
+        }
+      }
+    }
+
+    // Handle progress if needed
+    if (typeof config.onDownloadProgress === 'function') {
+      request.addEventListener('progress', config.onDownloadProgress);
+    }
+
+    // Not all browsers support upload events
+    if (typeof config.onUploadProgress === 'function' && request.upload) {
+      request.upload.addEventListener('progress', config.onUploadProgress);
+    }
+
+    if (config.cancelToken) {
+      // Handle cancellation
+      config.cancelToken.promise.then(function onCanceled(cancel) {
+        if (!request) {
+          return;
+        }
+
+        request.abort();
+        reject(cancel);
+        // Clean up request
+        request = null;
+      });
+    }
+
+    if (requestData === undefined) {
+      requestData = null;
+    }
+
+    // Send the request
+    request.send(requestData);
+  });
+};
+},{"./../utils":88,"./../core/settle":117,"./../helpers/buildURL":118,"./../helpers/parseHeaders":119,"./../helpers/isURLSameOrigin":120,"../core/createError":121,"./../helpers/btoa":122,"./../helpers/cookies":123}],116:[function(require,module,exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout() {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+})();
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch (e) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch (e) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while (len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) {
+    return [];
+};
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () {
+    return '/';
+};
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function () {
+    return 0;
+};
+},{}],89:[function(require,module,exports) {
+var process = require("process");
+'use strict';
+
+var utils = require('./utils');
+var normalizeHeaderName = require('./helpers/normalizeHeaderName');
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = require('./adapters/xhr');
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = require('./adapters/http');
+  }
+  return adapter;
+}
+
+var defaults = {
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Content-Type');
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data)) {
+      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+},{"./utils":88,"./helpers/normalizeHeaderName":106,"./adapters/xhr":107,"./adapters/http":107,"process":116}],113:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+},{"./../utils":88}],124:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn(data, headers);
+  });
+
+  return data;
+};
+
+},{"./../utils":88}],95:[function(require,module,exports) {
+'use strict';
+
+module.exports = function isCancel(value) {
+  return !!(value && value.__CANCEL__);
+};
+
+},{}],125:[function(require,module,exports) {
+'use strict';
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+};
+
+},{}],126:[function(require,module,exports) {
+'use strict';
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return relativeURL
+    ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
+    : baseURL;
+};
+
+},{}],112:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./../utils');
+var transformData = require('./transformData');
+var isCancel = require('../cancel/isCancel');
+var defaults = require('../defaults');
+var isAbsoluteURL = require('./../helpers/isAbsoluteURL');
+var combineURLs = require('./../helpers/combineURLs');
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  throwIfCancellationRequested(config);
+
+  // Support baseURL config
+  if (config.baseURL && !isAbsoluteURL(config.url)) {
+    config.url = combineURLs(config.baseURL, config.url);
+  }
+
+  // Ensure headers exist
+  config.headers = config.headers || {};
+
+  // Transform request data
+  config.data = transformData(
+    config.data,
+    config.headers,
+    config.transformRequest
+  );
+
+  // Flatten headers
+  config.headers = utils.merge(
+    config.headers.common || {},
+    config.headers[config.method] || {},
+    config.headers || {}
+  );
+
+  utils.forEach(
+    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+    function cleanHeaderConfig(method) {
+      delete config.headers[method];
+    }
+  );
+
+  var adapter = config.adapter || defaults.adapter;
+
+  return adapter(config).then(function onAdapterResolution(response) {
+    throwIfCancellationRequested(config);
+
+    // Transform response data
+    response.data = transformData(
+      response.data,
+      response.headers,
+      config.transformResponse
+    );
+
+    return response;
+  }, function onAdapterRejection(reason) {
+    if (!isCancel(reason)) {
+      throwIfCancellationRequested(config);
+
+      // Transform response data
+      if (reason && reason.response) {
+        reason.response.data = transformData(
+          reason.response.data,
+          reason.response.headers,
+          config.transformResponse
+        );
+      }
+    }
+
+    return Promise.reject(reason);
+  });
+};
+
+},{"./../utils":88,"./transformData":124,"../cancel/isCancel":95,"../defaults":89,"./../helpers/isAbsoluteURL":125,"./../helpers/combineURLs":126}],96:[function(require,module,exports) {
+'use strict';
+
+var defaults = require('./../defaults');
+var utils = require('./../utils');
+var InterceptorManager = require('./InterceptorManager');
+var dispatchRequest = require('./dispatchRequest');
+
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */
+function Axios(instanceConfig) {
+  this.defaults = instanceConfig;
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
+  }
+
+  config = utils.merge(defaults, {method: 'get'}, this.defaults, config);
+  config.method = config.method.toLowerCase();
+
+  // Hook up interceptors middleware
+  var chain = [dispatchRequest, undefined];
+  var promise = Promise.resolve(config);
+
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    chain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  while (chain.length) {
+    promise = promise.then(chain.shift(), chain.shift());
+  }
+
+  return promise;
+};
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+
+module.exports = Axios;
+
+},{"./../defaults":89,"./../utils":88,"./InterceptorManager":113,"./dispatchRequest":112}],93:[function(require,module,exports) {
+'use strict';
+
+/**
+ * A `Cancel` is an object that is thrown when an operation is canceled.
+ *
+ * @class
+ * @param {string=} message The message.
+ */
+function Cancel(message) {
+  this.message = message;
+}
+
+Cancel.prototype.toString = function toString() {
+  return 'Cancel' + (this.message ? ': ' + this.message : '');
+};
+
+Cancel.prototype.__CANCEL__ = true;
+
+module.exports = Cancel;
+
+},{}],94:[function(require,module,exports) {
+'use strict';
+
+var Cancel = require('./Cancel');
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */
+function CancelToken(executor) {
+  if (typeof executor !== 'function') {
+    throw new TypeError('executor must be a function.');
+  }
+
+  var resolvePromise;
+  this.promise = new Promise(function promiseExecutor(resolve) {
+    resolvePromise = resolve;
+  });
+
+  var token = this;
+  executor(function cancel(message) {
+    if (token.reason) {
+      // Cancellation has already been requested
+      return;
+    }
+
+    token.reason = new Cancel(message);
+    resolvePromise(token.reason);
+  });
+}
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+  if (this.reason) {
+    throw this.reason;
+  }
+};
+
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */
+CancelToken.source = function source() {
+  var cancel;
+  var token = new CancelToken(function executor(c) {
+    cancel = c;
+  });
+  return {
+    token: token,
+    cancel: cancel
+  };
+};
+
+module.exports = CancelToken;
+
+},{"./Cancel":93}],98:[function(require,module,exports) {
+'use strict';
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+};
+
+},{}],69:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./utils');
+var bind = require('./helpers/bind');
+var Axios = require('./core/Axios');
+var defaults = require('./defaults');
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  var context = new Axios(defaultConfig);
+  var instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils.extend(instance, Axios.prototype, context);
+
+  // Copy context to instance
+  utils.extend(instance, context);
+
+  return instance;
+}
+
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Factory for creating new instances
+axios.create = function create(instanceConfig) {
+  return createInstance(utils.merge(defaults, instanceConfig));
+};
+
+// Expose Cancel & CancelToken
+axios.Cancel = require('./cancel/Cancel');
+axios.CancelToken = require('./cancel/CancelToken');
+axios.isCancel = require('./cancel/isCancel');
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = require('./helpers/spread');
+
+module.exports = axios;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = axios;
+
+},{"./utils":88,"./helpers/bind":97,"./core/Axios":96,"./defaults":89,"./cancel/Cancel":93,"./cancel/CancelToken":94,"./cancel/isCancel":95,"./helpers/spread":98}],30:[function(require,module,exports) {
+module.exports = require('./lib/axios');
+},{"./lib/axios":69}],100:[function(require,module,exports) {
+'use strict';
+
+var has = Object.prototype.hasOwnProperty;
+
+var hexTable = function () {
+    var array = [];
+    for (var i = 0; i < 256; ++i) {
+        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
+    }
+
+    return array;
+}();
+
+var compactQueue = function compactQueue(queue) {
+    var obj;
+
+    while (queue.length) {
+        var item = queue.pop();
+        obj = item.obj[item.prop];
+
+        if (Array.isArray(obj)) {
+            var compacted = [];
+
+            for (var j = 0; j < obj.length; ++j) {
+                if (typeof obj[j] !== 'undefined') {
+                    compacted.push(obj[j]);
+                }
+            }
+
+            item.obj[item.prop] = compacted;
+        }
+    }
+
+    return obj;
+};
+
+var arrayToObject = function arrayToObject(source, options) {
+    var obj = options && options.plainObjects ? Object.create(null) : {};
+    for (var i = 0; i < source.length; ++i) {
+        if (typeof source[i] !== 'undefined') {
+            obj[i] = source[i];
+        }
+    }
+
+    return obj;
+};
+
+var merge = function merge(target, source, options) {
+    if (!source) {
+        return target;
+    }
+
+    if (typeof source !== 'object') {
+        if (Array.isArray(target)) {
+            target.push(source);
+        } else if (typeof target === 'object') {
+            if (options.plainObjects || options.allowPrototypes || !has.call(Object.prototype, source)) {
+                target[source] = true;
+            }
+        } else {
+            return [target, source];
+        }
+
+        return target;
+    }
+
+    if (typeof target !== 'object') {
+        return [target].concat(source);
+    }
+
+    var mergeTarget = target;
+    if (Array.isArray(target) && !Array.isArray(source)) {
+        mergeTarget = arrayToObject(target, options);
+    }
+
+    if (Array.isArray(target) && Array.isArray(source)) {
+        source.forEach(function (item, i) {
+            if (has.call(target, i)) {
+                if (target[i] && typeof target[i] === 'object') {
+                    target[i] = merge(target[i], item, options);
+                } else {
+                    target.push(item);
+                }
+            } else {
+                target[i] = item;
+            }
+        });
+        return target;
+    }
+
+    return Object.keys(source).reduce(function (acc, key) {
+        var value = source[key];
+
+        if (has.call(acc, key)) {
+            acc[key] = merge(acc[key], value, options);
+        } else {
+            acc[key] = value;
+        }
+        return acc;
+    }, mergeTarget);
+};
+
+var assign = function assignSingleSource(target, source) {
+    return Object.keys(source).reduce(function (acc, key) {
+        acc[key] = source[key];
+        return acc;
+    }, target);
+};
+
+var decode = function (str) {
+    try {
+        return decodeURIComponent(str.replace(/\+/g, ' '));
+    } catch (e) {
+        return str;
+    }
+};
+
+var encode = function encode(str) {
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    var string = typeof str === 'string' ? str : String(str);
+
+    var out = '';
+    for (var i = 0; i < string.length; ++i) {
+        var c = string.charCodeAt(i);
+
+        if (c === 0x2D // -
+        || c === 0x2E // .
+        || c === 0x5F // _
+        || c === 0x7E // ~
+        || c >= 0x30 && c <= 0x39 // 0-9
+        || c >= 0x41 && c <= 0x5A // a-z
+        || c >= 0x61 && c <= 0x7A // A-Z
+        ) {
+                out += string.charAt(i);
+                continue;
+            }
+
+        if (c < 0x80) {
+            out = out + hexTable[c];
+            continue;
+        }
+
+        if (c < 0x800) {
+            out = out + (hexTable[0xC0 | c >> 6] + hexTable[0x80 | c & 0x3F]);
+            continue;
+        }
+
+        if (c < 0xD800 || c >= 0xE000) {
+            out = out + (hexTable[0xE0 | c >> 12] + hexTable[0x80 | c >> 6 & 0x3F] + hexTable[0x80 | c & 0x3F]);
+            continue;
+        }
+
+        i += 1;
+        c = 0x10000 + ((c & 0x3FF) << 10 | string.charCodeAt(i) & 0x3FF);
+        out += hexTable[0xF0 | c >> 18] + hexTable[0x80 | c >> 12 & 0x3F] + hexTable[0x80 | c >> 6 & 0x3F] + hexTable[0x80 | c & 0x3F];
+    }
+
+    return out;
+};
+
+var compact = function compact(value) {
+    var queue = [{ obj: { o: value }, prop: 'o' }];
+    var refs = [];
+
+    for (var i = 0; i < queue.length; ++i) {
+        var item = queue[i];
+        var obj = item.obj[item.prop];
+
+        var keys = Object.keys(obj);
+        for (var j = 0; j < keys.length; ++j) {
+            var key = keys[j];
+            var val = obj[key];
+            if (typeof val === 'object' && val !== null && refs.indexOf(val) === -1) {
+                queue.push({ obj: obj, prop: key });
+                refs.push(val);
+            }
+        }
+    }
+
+    return compactQueue(queue);
+};
+
+var isRegExp = function isRegExp(obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+};
+
+var isBuffer = function isBuffer(obj) {
+    if (obj === null || typeof obj === 'undefined') {
+        return false;
+    }
+
+    return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+};
+
+module.exports = {
+    arrayToObject: arrayToObject,
+    assign: assign,
+    compact: compact,
+    decode: decode,
+    encode: encode,
+    isBuffer: isBuffer,
+    isRegExp: isRegExp,
+    merge: merge
+};
+},{}],72:[function(require,module,exports) {
+'use strict';
+
+var replace = String.prototype.replace;
+var percentTwenties = /%20/g;
+
+module.exports = {
+    'default': 'RFC3986',
+    formatters: {
+        RFC1738: function (value) {
+            return replace.call(value, percentTwenties, '+');
+        },
+        RFC3986: function (value) {
+            return value;
+        }
+    },
+    RFC1738: 'RFC1738',
+    RFC3986: 'RFC3986'
+};
+},{}],70:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./utils');
+var formats = require('./formats');
+
+var arrayPrefixGenerators = {
+    brackets: function brackets(prefix) {
+        // eslint-disable-line func-name-matching
+        return prefix + '[]';
+    },
+    indices: function indices(prefix, key) {
+        // eslint-disable-line func-name-matching
+        return prefix + '[' + key + ']';
+    },
+    repeat: function repeat(prefix) {
+        // eslint-disable-line func-name-matching
+        return prefix;
+    }
+};
+
+var toISO = Date.prototype.toISOString;
+
+var defaults = {
+    delimiter: '&',
+    encode: true,
+    encoder: utils.encode,
+    encodeValuesOnly: false,
+    serializeDate: function serializeDate(date) {
+        // eslint-disable-line func-name-matching
+        return toISO.call(date);
+    },
+    skipNulls: false,
+    strictNullHandling: false
+};
+
+var stringify = function stringify( // eslint-disable-line func-name-matching
+object, prefix, generateArrayPrefix, strictNullHandling, skipNulls, encoder, filter, sort, allowDots, serializeDate, formatter, encodeValuesOnly) {
+    var obj = object;
+    if (typeof filter === 'function') {
+        obj = filter(prefix, obj);
+    } else if (obj instanceof Date) {
+        obj = serializeDate(obj);
+    } else if (obj === null) {
+        if (strictNullHandling) {
+            return encoder && !encodeValuesOnly ? encoder(prefix, defaults.encoder) : prefix;
+        }
+
+        obj = '';
+    }
+
+    if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean' || utils.isBuffer(obj)) {
+        if (encoder) {
+            var keyValue = encodeValuesOnly ? prefix : encoder(prefix, defaults.encoder);
+            return [formatter(keyValue) + '=' + formatter(encoder(obj, defaults.encoder))];
+        }
+        return [formatter(prefix) + '=' + formatter(String(obj))];
+    }
+
+    var values = [];
+
+    if (typeof obj === 'undefined') {
+        return values;
+    }
+
+    var objKeys;
+    if (Array.isArray(filter)) {
+        objKeys = filter;
+    } else {
+        var keys = Object.keys(obj);
+        objKeys = sort ? keys.sort(sort) : keys;
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls && obj[key] === null) {
+            continue;
+        }
+
+        if (Array.isArray(obj)) {
+            values = values.concat(stringify(obj[key], generateArrayPrefix(prefix, key), generateArrayPrefix, strictNullHandling, skipNulls, encoder, filter, sort, allowDots, serializeDate, formatter, encodeValuesOnly));
+        } else {
+            values = values.concat(stringify(obj[key], prefix + (allowDots ? '.' + key : '[' + key + ']'), generateArrayPrefix, strictNullHandling, skipNulls, encoder, filter, sort, allowDots, serializeDate, formatter, encodeValuesOnly));
+        }
+    }
+
+    return values;
+};
+
+module.exports = function (object, opts) {
+    var obj = object;
+    var options = opts ? utils.assign({}, opts) : {};
+
+    if (options.encoder !== null && options.encoder !== undefined && typeof options.encoder !== 'function') {
+        throw new TypeError('Encoder has to be a function.');
+    }
+
+    var delimiter = typeof options.delimiter === 'undefined' ? defaults.delimiter : options.delimiter;
+    var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults.strictNullHandling;
+    var skipNulls = typeof options.skipNulls === 'boolean' ? options.skipNulls : defaults.skipNulls;
+    var encode = typeof options.encode === 'boolean' ? options.encode : defaults.encode;
+    var encoder = typeof options.encoder === 'function' ? options.encoder : defaults.encoder;
+    var sort = typeof options.sort === 'function' ? options.sort : null;
+    var allowDots = typeof options.allowDots === 'undefined' ? false : options.allowDots;
+    var serializeDate = typeof options.serializeDate === 'function' ? options.serializeDate : defaults.serializeDate;
+    var encodeValuesOnly = typeof options.encodeValuesOnly === 'boolean' ? options.encodeValuesOnly : defaults.encodeValuesOnly;
+    if (typeof options.format === 'undefined') {
+        options.format = formats['default'];
+    } else if (!Object.prototype.hasOwnProperty.call(formats.formatters, options.format)) {
+        throw new TypeError('Unknown format option provided.');
+    }
+    var formatter = formats.formatters[options.format];
+    var objKeys;
+    var filter;
+
+    if (typeof options.filter === 'function') {
+        filter = options.filter;
+        obj = filter('', obj);
+    } else if (Array.isArray(options.filter)) {
+        filter = options.filter;
+        objKeys = filter;
+    }
+
+    var keys = [];
+
+    if (typeof obj !== 'object' || obj === null) {
+        return '';
+    }
+
+    var arrayFormat;
+    if (options.arrayFormat in arrayPrefixGenerators) {
+        arrayFormat = options.arrayFormat;
+    } else if ('indices' in options) {
+        arrayFormat = options.indices ? 'indices' : 'repeat';
+    } else {
+        arrayFormat = 'indices';
+    }
+
+    var generateArrayPrefix = arrayPrefixGenerators[arrayFormat];
+
+    if (!objKeys) {
+        objKeys = Object.keys(obj);
+    }
+
+    if (sort) {
+        objKeys.sort(sort);
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls && obj[key] === null) {
+            continue;
+        }
+
+        keys = keys.concat(stringify(obj[key], key, generateArrayPrefix, strictNullHandling, skipNulls, encode ? encoder : null, filter, sort, allowDots, serializeDate, formatter, encodeValuesOnly));
+    }
+
+    var joined = keys.join(delimiter);
+    var prefix = options.addQueryPrefix === true ? '?' : '';
+
+    return joined.length > 0 ? prefix + joined : '';
+};
+},{"./utils":100,"./formats":72}],71:[function(require,module,exports) {
+'use strict';
+
+var utils = require('./utils');
+
+var has = Object.prototype.hasOwnProperty;
+
+var defaults = {
+    allowDots: false,
+    allowPrototypes: false,
+    arrayLimit: 20,
+    decoder: utils.decode,
+    delimiter: '&',
+    depth: 5,
+    parameterLimit: 1000,
+    plainObjects: false,
+    strictNullHandling: false
+};
+
+var parseValues = function parseQueryStringValues(str, options) {
+    var obj = {};
+    var cleanStr = options.ignoreQueryPrefix ? str.replace(/^\?/, '') : str;
+    var limit = options.parameterLimit === Infinity ? undefined : options.parameterLimit;
+    var parts = cleanStr.split(options.delimiter, limit);
+
+    for (var i = 0; i < parts.length; ++i) {
+        var part = parts[i];
+
+        var bracketEqualsPos = part.indexOf(']=');
+        var pos = bracketEqualsPos === -1 ? part.indexOf('=') : bracketEqualsPos + 1;
+
+        var key, val;
+        if (pos === -1) {
+            key = options.decoder(part, defaults.decoder);
+            val = options.strictNullHandling ? null : '';
+        } else {
+            key = options.decoder(part.slice(0, pos), defaults.decoder);
+            val = options.decoder(part.slice(pos + 1), defaults.decoder);
+        }
+        if (has.call(obj, key)) {
+            obj[key] = [].concat(obj[key]).concat(val);
+        } else {
+            obj[key] = val;
+        }
+    }
+
+    return obj;
+};
+
+var parseObject = function (chain, val, options) {
+    var leaf = val;
+
+    for (var i = chain.length - 1; i >= 0; --i) {
+        var obj;
+        var root = chain[i];
+
+        if (root === '[]') {
+            obj = [];
+            obj = obj.concat(leaf);
+        } else {
+            obj = options.plainObjects ? Object.create(null) : {};
+            var cleanRoot = root.charAt(0) === '[' && root.charAt(root.length - 1) === ']' ? root.slice(1, -1) : root;
+            var index = parseInt(cleanRoot, 10);
+            if (!isNaN(index) && root !== cleanRoot && String(index) === cleanRoot && index >= 0 && options.parseArrays && index <= options.arrayLimit) {
+                obj = [];
+                obj[index] = leaf;
+            } else {
+                obj[cleanRoot] = leaf;
+            }
+        }
+
+        leaf = obj;
+    }
+
+    return leaf;
+};
+
+var parseKeys = function parseQueryStringKeys(givenKey, val, options) {
+    if (!givenKey) {
+        return;
+    }
+
+    // Transform dot notation to bracket notation
+    var key = options.allowDots ? givenKey.replace(/\.([^.[]+)/g, '[$1]') : givenKey;
+
+    // The regex chunks
+
+    var brackets = /(\[[^[\]]*])/;
+    var child = /(\[[^[\]]*])/g;
+
+    // Get the parent
+
+    var segment = brackets.exec(key);
+    var parent = segment ? key.slice(0, segment.index) : key;
+
+    // Stash the parent if it exists
+
+    var keys = [];
+    if (parent) {
+        // If we aren't using plain objects, optionally prefix keys
+        // that would overwrite object prototype properties
+        if (!options.plainObjects && has.call(Object.prototype, parent)) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
+        keys.push(parent);
+    }
+
+    // Loop through children appending to the array until we hit depth
+
+    var i = 0;
+    while ((segment = child.exec(key)) !== null && i < options.depth) {
+        i += 1;
+        if (!options.plainObjects && has.call(Object.prototype, segment[1].slice(1, -1))) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+        keys.push(segment[1]);
+    }
+
+    // If there's a remainder, just add whatever is left
+
+    if (segment) {
+        keys.push('[' + key.slice(segment.index) + ']');
+    }
+
+    return parseObject(keys, val, options);
+};
+
+module.exports = function (str, opts) {
+    var options = opts ? utils.assign({}, opts) : {};
+
+    if (options.decoder !== null && options.decoder !== undefined && typeof options.decoder !== 'function') {
+        throw new TypeError('Decoder has to be a function.');
+    }
+
+    options.ignoreQueryPrefix = options.ignoreQueryPrefix === true;
+    options.delimiter = typeof options.delimiter === 'string' || utils.isRegExp(options.delimiter) ? options.delimiter : defaults.delimiter;
+    options.depth = typeof options.depth === 'number' ? options.depth : defaults.depth;
+    options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : defaults.arrayLimit;
+    options.parseArrays = options.parseArrays !== false;
+    options.decoder = typeof options.decoder === 'function' ? options.decoder : defaults.decoder;
+    options.allowDots = typeof options.allowDots === 'boolean' ? options.allowDots : defaults.allowDots;
+    options.plainObjects = typeof options.plainObjects === 'boolean' ? options.plainObjects : defaults.plainObjects;
+    options.allowPrototypes = typeof options.allowPrototypes === 'boolean' ? options.allowPrototypes : defaults.allowPrototypes;
+    options.parameterLimit = typeof options.parameterLimit === 'number' ? options.parameterLimit : defaults.parameterLimit;
+    options.strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults.strictNullHandling;
+
+    if (str === '' || str === null || typeof str === 'undefined') {
+        return options.plainObjects ? Object.create(null) : {};
+    }
+
+    var tempObj = typeof str === 'string' ? parseValues(str, options) : str;
+    var obj = options.plainObjects ? Object.create(null) : {};
+
+    // Iterate over the keys and setup the new object
+
+    var keys = Object.keys(tempObj);
+    for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        var newObj = parseKeys(key, tempObj[key], options);
+        obj = utils.merge(obj, newObj, options);
+    }
+
+    return utils.compact(obj);
+};
+},{"./utils":100}],31:[function(require,module,exports) {
+'use strict';
+
+var stringify = require('./stringify');
+var parse = require('./parse');
+var formats = require('./formats');
+
+module.exports = {
+    formats: formats,
+    parse: parse,
+    stringify: stringify
+};
+},{"./stringify":70,"./parse":71,"./formats":72}],28:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Modal = undefined;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AppContext = require('../AppContext');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Modal = exports.Modal = function Modal() {
+  return _react2.default.createElement(
+    _AppContext.AppContext.Consumer,
+    null,
+    function (app) {
+      return _react2.default.createElement(
+        'div',
+        { className: 'mi-modal' },
+        _react2.default.createElement(
+          'div',
+          { className: 'mi-modal-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'mi-modal-header' },
+            _react2.default.createElement(
+              'button',
+              { onClick: app.fn.closeModal },
+              'x'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'mi-modal-body' },
+            _react2.default.createElement(
+              'p',
+              null,
+              app.state.modal
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'mi-modal-footer' },
+            _react2.default.createElement(
+              'button',
+              { onClick: app.fn.closeModal },
+              'OK'
+            )
+          )
+        )
+      );
+    }
+  );
+};
+},{"react":5,"../AppContext":23}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7490,13 +10403,37 @@ var _Content = require('./content/Content');
 
 var _Footer = require('./footer/Footer');
 
+var _axios = require('axios');
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _qs = require('qs');
+
+var _qs2 = _interopRequireDefault(_qs);
+
+var _Modal = require('./content/Modal');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var cloudinaryConfig = {
+  cloud_name: 'di9ypoqyl',
+  api_key: '832963352331166',
+  api_secret: 'M8UNKmq22zb9uydzTs4ECyzsDBA'
+};
+
+var base = "http://localhost:8080/SistemaCinema";
+var axios = _axios2.default.create({
+  baseURL: base,
+  timeout: 5000
+});
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -7512,15 +10449,124 @@ var App = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this.fn = {}, _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      user: null,
+      cines: null,
+      movies: null,
+      cities: null,
+      candies: null,
+      modal: null
+    }, _this.fn = {
+      closeModal: function closeModal() {
+        _this.setState({ modal: null });
+      },
+      getHome: function getHome() {
+        if (!_this.state.cines && !_this.state.movies && !_this.state.cities && !_this.state.candies) axios.get('/Home').then(function (res) {
+          console.log(res.data);
+          _this.setState({
+            cines: res.data.cines,
+            movies: res.data.movies,
+            cities: res.data.cities,
+            candies: res.data.candies
+          });
+          sessionStorage.setItem("cines", JSON.stringify(res.data.cines));
+          sessionStorage.setItem("movies", JSON.stringify(res.data.peliculas));
+          sessionStorage.setItem("cities", JSON.stringify(res.data.ciudades));
+          sessionStorage.setItem("candies", JSON.stringify(res.data.dulces));
+        }).catch(function (err) {
+          return console.log(err);
+        });
+      },
+      loginController: function loginController(e) {
+        e.preventDefault();
+        var form = {
+          user: e.target.user.value,
+          password: e.target.password.value
+        };
+        axios.post('/api/users/login', _qs2.default.stringify(form)).then(function (res) {
+          console.log(res.data);
+          if (res.data.err) return _this.setState({ modal: err.error });
+          _this.setState({ user: res.data, modal: 'Inicio de sesion exitoso' });
+          sessionStorage.setItem("user", JSON.stringify(res.data));
+        }).catch(function (err) {
+          return _this.setState({ modal: err.response.data.error });
+        });
+      },
+      logoutController: function logoutController(e) {
+        _this.setState({ user: null });
+        sessionStorage.removeItem("user");
+      },
+      registerController: function registerController(e) {
+        e.preventDefault();
+        var password = e.target.password.value;
+        var repassword = e.target.repassword.value;
+        if (password == repassword) {
+          var form = {
+            name: e.target.name.value,
+            apePat: e.target.apePat.value,
+            apeMat: e.target.apeMat.value,
+            dni: e.target.dni.value,
+            password: e.target.password.value
+          };
+          if (e.target.photo) {
+            if (e.target.photo.value == "") return _this.setState({ modal: 'Es necesaria la foto' });
+            form.photo = e.target.photo.value;
+            if (e.target.cine.value == 0) return _this.setState({ modal: 'Es necesario el cine' });
+            form.cine = e.target.cine.value;
+          }
+          return axios.post('/api/users', _qs2.default.stringify(form)).then(function (res) {
+            console.log(res.data);
+            if (res.data.err) return _this.setState({ modal: res.data.err });
+            _this.setState({ user: res.data });
+            if (!e.target.photo) sessionStorage.setItem("user", JSON.stringify(res.data));
+            _this.setState({ modal: 'Registro exitoso' });
+          }).catch(function (err) {
+            console.log(err);
+            _this.setState({ modal: err.response.data.error });
+          });
+        } else {
+          alert("El password y el repassword no son iguales");
+        }
+      },
+      getCines: function getCines() {
+        if (!_this.state.cines) axios.get('/Cine').then(function (res) {
+          _this.setState({
+            cines: res.data.cines
+          });
+          sessionStorage.setItem("cines", JSON.stringify(res.data.cines));
+        }).catch(function (err) {
+          return _this.setState({ modal: err.err });
+        });
+      },
+      getFilter: function getFilter(e) {
+        var childrens = [].concat(_toConsumableArray(e.target.children));
+        var filter = {};
+        childrens.map(function (c) {
+          filter[c.name] = c.value;
+        });
+        console.log(filter);
+      }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(App, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.setState({
+        user: sessionStorage.getItem('user') ? JSON.parse(sessionStorage.getItem("user")) : null,
+        cines: sessionStorage.getItem('cines') ? JSON.parse(sessionStorage.getItem("cines")) : null,
+        cities: sessionStorage.getItem("movies") ? JSON.parse(sessionStorage.getItem("movies")) : null,
+        candies: sessionStorage.getItem("candies") ? JSON.parse(sessionStorage.getItem("candies")) : null,
+        movies: sessionStorage.getItem("movies") ? JSON.parse(sessionStorage.getItem("movies")) : null
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _AppContext.AppContext.Provider,
         { value: { state: this.state, fn: this.fn } },
+        this.state.modal && _react2.default.createElement(_Modal.Modal, null),
         _react2.default.createElement(_Header.Header, null),
         _react2.default.createElement(_Content.Content, null),
         _react2.default.createElement(_Footer.Footer, null)
@@ -7532,7 +10578,7 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = App;
-},{"react":5,"./AppContext":25,"./header/Header":26,"./content/Content":27,"./footer/Footer":28}],60:[function(require,module,exports) {
+},{"react":5,"./AppContext":23,"./header/Header":25,"./content/Content":26,"./footer/Footer":27,"axios":30,"qs":31,"./content/Modal":28}],59:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -7603,7 +10649,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],62:[function(require,module,exports) {
+},{}],65:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -7669,7 +10715,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],88:[function(require,module,exports) {
+},{}],105:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -7692,7 +10738,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],80:[function(require,module,exports) {
+},{}],85:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -7715,7 +10761,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":88}],63:[function(require,module,exports) {
+},{"./isNode":105}],66:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -7753,7 +10799,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":80}],79:[function(require,module,exports) {
+},{"./isTextNode":85}],87:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -7784,7 +10830,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],64:[function(require,module,exports) {
+},{}],67:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -7821,7 +10867,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":79}],81:[function(require,module,exports) {
+},{"./hyphenate":87}],86:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -7851,7 +10897,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],65:[function(require,module,exports) {
+},{}],68:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -7889,7 +10935,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":81}],23:[function(require,module,exports) {
+},{"./camelize":86}],24:[function(require,module,exports) {
 /** @license React v16.4.0
  * react-dom.development.js
  *
@@ -25171,7 +28217,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"fbjs/lib/invariant":51,"react":5,"fbjs/lib/warning":53,"fbjs/lib/ExecutionEnvironment":60,"object-assign":50,"fbjs/lib/emptyFunction":54,"prop-types/checkPropTypes":45,"fbjs/lib/getActiveElement":61,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":63,"fbjs/lib/emptyObject":52,"fbjs/lib/hyphenateStyleName":64,"fbjs/lib/camelizeStyleName":65}],6:[function(require,module,exports) {
+},{"fbjs/lib/invariant":62,"react":5,"fbjs/lib/warning":63,"fbjs/lib/ExecutionEnvironment":59,"object-assign":57,"fbjs/lib/emptyFunction":58,"prop-types/checkPropTypes":60,"fbjs/lib/getActiveElement":61,"fbjs/lib/shallowEqual":65,"fbjs/lib/containsNode":66,"fbjs/lib/emptyObject":64,"fbjs/lib/hyphenateStyleName":67,"fbjs/lib/camelizeStyleName":68}],6:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -25207,7 +28253,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":23}],3:[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":24}],3:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -25229,7 +28275,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   null,
   _react2.default.createElement(_App2.default, null)
 ), document.getElementById('app'));
-},{"react":5,"./components/App":4,"react-dom":6,"react-router-dom":7}],96:[function(require,module,exports) {
+},{"react":5,"./components/App":4,"react-dom":6,"react-router-dom":7}],131:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -25258,7 +28304,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '38717' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '32825' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -25399,5 +28445,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[96,3], null)
+},{}]},{},[131,3], null)
 //# sourceMappingURL=/src.aba4f790.map

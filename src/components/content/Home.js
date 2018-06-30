@@ -7,7 +7,9 @@ import { MovieSlider } from './MovieSlider';
 export const Home = (props) => {
   return (
     <AppContext.Consumer>
-      { (app) => (
+      { (app) => {
+        app.fn.getHome();
+        return (
         <div>
           <section className="filter-section">
             <div>
@@ -16,7 +18,7 @@ export const Home = (props) => {
           </section>
           <section className="candies-section">
             <div className="home-sections">Dulceria</div>
-            <Promociones/>
+            <Promociones app={app}/>
           </section>
           <section className="movies-section">
           <div className="home-sections">Peliculas</div>
@@ -38,17 +40,17 @@ export const Home = (props) => {
                 </div>
               </div>
               <a className="carousel-control-prev" href="#carousel-movies" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                <i className="fa fa-chevron-left" aria-hidden="true"></i>
                 <span className="sr-only">Previous</span>
               </a>  
               <a className="carousel-control-next" href="#carousel-movies" role="button" data-slide="next">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
                 <span className="sr-only">Next</span>
               </a>
             </div>
           </section>
         </div>
-       ) }
+       ) }}
     </AppContext.Consumer>
     
   )

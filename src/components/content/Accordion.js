@@ -1,29 +1,15 @@
 import React from 'react';
 
-class Accordion extends React.PureComponent{
-  state = {
-    active: false
-  }
-  
-  handleButton = () =>{
-    this.setState({ active: !this.state.active });
-  }
-
-  render(){
-    return (
-      <div>
-        <button onClick={this.handleButton}>{this.props.title}</button>
-        <ul className={this.state.active ? 'display-block' : 'display-none'}>
-          {/*this.props.data.map((d) => {
-            <li key={d.id}>{d.info}</li>
-          })*/}
-          <li>Accion</li>
-          <li>Comedia</li>
-          <li>Drama</li>
-        </ul>
+export const Accordion = (props) => {
+  return (
+    <div className="wrap-collabsible">
+      <input id="collapsible" className="toggle" type="checkbox"/>
+      <label htmlFor="collapsible" className="lbl-toggle">{props.title}</label>
+      <div className="collapsible-content">
+        <div className="content-inner">
+          {props.children}
+        </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
-
-export default Accordion;

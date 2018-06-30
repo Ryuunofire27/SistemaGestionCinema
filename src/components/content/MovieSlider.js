@@ -13,7 +13,7 @@ export const MovieSlider = (props) => {
           <i className="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Comprar
         </Link>
         <Link to={`/movies/${props.id}`} className="btn-comprar">
-          <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Detalles
+          <i className="fa fa-plus" aria-hidden="true"></i>&nbsp;Detalles
         </Link>
       </div>
     </div>
