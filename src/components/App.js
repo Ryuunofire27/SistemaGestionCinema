@@ -14,7 +14,7 @@ const cloudinaryConfig = {
 };
 
 //const base = "http://localhost:8080/SistemaCinema";
-const base = "sistemacinema.herokuapp.com";
+const base = "http://sistemacinema.herokuapp.com";
 const axios = Axios.create({
   baseURL: base,
   timeout: 5000
