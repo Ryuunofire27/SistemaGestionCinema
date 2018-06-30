@@ -13,7 +13,8 @@ const cloudinaryConfig = {
   api_secret: 'M8UNKmq22zb9uydzTs4ECyzsDBA'
 };
 
-const base = "http://localhost:8080/SistemaCinema";
+//const base = "http://localhost:8080/SistemaCinema";
+const base = "sistemacinema.herokuapp.com";
 const axios = Axios.create({
   baseURL: base,
   timeout: 5000
